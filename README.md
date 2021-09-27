@@ -50,10 +50,10 @@ You should see heroku `https://git.heroku.com/<RANDOMLY_GENERATED_NAME_OF_YOUR_A
 
 ## Deploying to Heroku
 
-Before we deploy, you also need to set a config variable of `STRIPE_SECRET_KEY` to the same secret key value from your stripe dashboard, the same one in your `.env` file. The `.env` file is only for local development, in order for our heroku production app to have access to this secret key, we add it to our Heroku projects config variables by typing:
+Before we deploy, you may also need to set config variables as specified in your .env file. The `.env` file is only for local development, in order for our heroku production app to have access to this secret key, we add it to our Heroku projects config variables by typing:
 
 ```
-heroku config:set STRIPE_SECRET_KEY=<YOUR_STRIPE_SECRET_KEY>
+heroku config:set KEY_NAME_IN_ENV=<SECRET_KEY_VALUE>
 ```
 
 After that, you can deploy to heroku by running:
